@@ -1,6 +1,5 @@
 # YouTube Clone
 
-![YouTube Clone](https://via.placeholder.com/1200x600?text=YouTube+Clone+Preview)
 
 ## 🌐 Live Demo
 🔗 **[YouTube Clone Live](https://youtube-clone-mu-lilac.vercel.app/)**
