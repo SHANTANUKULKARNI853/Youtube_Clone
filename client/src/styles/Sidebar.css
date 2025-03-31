@@ -1,0 +1,72 @@
+.sidebar {
+    width: 240px; /* Adjusted width */
+    height: calc(100vh - 56px); /* Prevents overlap by reducing height */
+    position: fixed;
+    top: 56px; /* Moves below navbar */
+    left: 0;
+    background: #0f0f0f;
+    color: white;
+    padding-top: 10px; /* Adjust spacing */
+    z-index: 1000; /* Ensures sidebar is below navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto; /* Scroll if needed */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px; /* Standard YouTube navbar height */
+    background: #181818; /* Navbar background */
+    z-index: 1100; /* Ensures navbar is above sidebar */
+}
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Sidebar Links */
+.sidebar-menu li {
+    width: 100%;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+}
+
+.sidebar-link i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* Hover Effect */
+.sidebar-link:hover {
+    background: #282828;
+}
+
+/* Ensure the links take full width */
+.sidebar a {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hide scrollbar for a cleaner look */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}

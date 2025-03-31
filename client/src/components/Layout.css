@@ -1,0 +1,94 @@
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px; /* Standard YouTube navbar height */
+    background: #181818; /* Navbar background */
+    z-index: 1100; /* Ensures navbar is above sidebar */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px; /* Standard YouTube sidebar width */
+    height: calc(100vh - 56px); /* Prevents overlap by reducing height */
+    position: fixed;
+    top: 56px; /* Moves below navbar */
+    left: 0;
+    background: #0f0f0f;
+    color: white;
+    padding-top: 10px;
+    z-index: 1000; /* Below navbar */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Scroll if needed */
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Sidebar Links */
+.sidebar-menu li {
+    width: 100%;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+}
+
+.sidebar-link i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.sidebar-link:hover {
+    background: #282828;
+}
+
+/* Hide scrollbar */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Video List (Main Content) */
+.video-list {
+    margin-left: 240px; /* Matches sidebar width */
+    margin-top: 56px; /* Matches navbar height */
+    padding: 20px;
+    width: calc(100% - 240px); /* Adjusts width to avoid overlap */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    background: #f9f9f9;
+    min-height: calc(100vh - 56px); /* Ensures full height minus navbar */
+}
+
+/* Video Card */
+.video-card {
+    background: #282828;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}

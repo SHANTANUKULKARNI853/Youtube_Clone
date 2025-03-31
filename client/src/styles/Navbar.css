@@ -1,0 +1,84 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Higher than sidebar */
+  }
+  
+  /* Centering Search Bar Properly */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures proper spacing */
+    background: white;
+    border-radius: 25px; /* Increased for smoother edges */
+    overflow: hidden;
+    padding: 8px 15px; /* Balanced padding */
+    width: 50%;
+    max-width: 500px; /* Prevents it from being too large on wider screens */
+    min-width: 300px; /* Ensures it doesn't shrink too much */
+    height: 45px; /* Adjusted height for better proportions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+}
+  
+  .search-bar input {
+    border: none;
+    padding: 8px 12px;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  /* Fixing the search button */
+  .search-bar button {
+    border: none;
+    background: #ff0000; /* YouTube Red */
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    width: 40px;
+  }
+  
+  /* Align login/register */
+  .auth-links {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1001; /* Ensure it's above the sidebar */
+  }
+  
+  .auth-links a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+  }
+  .auth-links .logout-btn {
+    font-size: large;
+  }
+  
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust width if necessary */
+    height: 100vh;
+    background: black;
+    color: white;
+    padding-top: 50px;
+    z-index: 999; /* Ensure it's below navbar */
+  }
+  .logo{
+ font-size: 20px;
+ color: #ff0000;
+
+  }

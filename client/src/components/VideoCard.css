@@ -1,0 +1,73 @@
+.video-card {
+  width: 260px;
+  background-color: #222;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+.video-thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.video-card:hover .video-thumbnail {
+  opacity: 0.9;
+}
+
+.video-info {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.video-info h3 {
+  font-size: 18px;
+  margin: 6px 0 4px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.video-info p {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-card {
+      width: 100%;
+  }
+}
+
+.follow-btn, .unfollow-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.follow-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.unfollow-btn {
+  background-color: #ff4d4d;
+  color: white;
+}

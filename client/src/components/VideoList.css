@@ -1,0 +1,26 @@
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.video-card {
+    background: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-card p {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}

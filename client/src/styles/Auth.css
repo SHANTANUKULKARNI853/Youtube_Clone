@@ -1,0 +1,99 @@
+/* General Styling */
+/* .auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0f0f0f; 
+  font-family: 'Arial', sans-serif;
+} */
+
+/* Authentication Card */
+.auth-card {
+  background-color: #181818;
+  border-radius: 12px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  
+  /* Centering the content inside the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+/* Input Fields */
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #444;
+  outline: none;
+  font-size: 1rem;
+  background-color: #222;
+  color: #ddd;
+}
+
+.auth-card input:focus {
+  border: 1px solid #ff0000;
+  background-color: #333;
+}
+
+/* Submit Button */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(45deg, #ff0000, #d00000);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.auth-card button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Links */
+.auth-card p {
+  margin-top: 10px;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.auth-card a {
+  color: #ff4c4c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
+
+/* Centering the Entire Page */
+.centered-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle, #141414, #0f0f0f);
+}
